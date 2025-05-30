@@ -22,7 +22,7 @@ This repository contains two analysis scripts for a small breast cancer study:
 
 ├── GEO Accession viewer.html # link to original study
 
-├── GEO Accession viewer_files # full file contents from the study
+├── GEO Accession viewer_files # full file contents required to upload original study webpage
 
 ├── GSE267505_RawCountFile_rsemgenes.txt # scRNA protein dataset used in inital study
 
