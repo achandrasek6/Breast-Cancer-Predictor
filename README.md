@@ -18,27 +18,31 @@ This repository contains two analysis scripts for a small breast cancer study:
 
 ---
 
-## Repository Structure
+# Repository Structure
 
-├── GEO Accession viewer.html # link to original study
-
-├── GEO Accession viewer_files # full file contents required to upload original study webpage
-
-├── GSE267505_RawCountFile_rsemgenes.txt # scRNA protein dataset used in inital study
-
-├── data_cleaning.R # R script for data cleaning/prep
-
-├── .Rhistory # R history file
-
-├── cleaned_data.txt # Output of the R script (input for Python)
-
-├── Machine_Learning.py # Python modeling & evaluation
-
-└── README.md # This file
+      Breast-Cancer-Predictor/
+      
+            ├── Breast_Cancer_Project/
+            
+                  ├── GEO Accession viewer.html # link to original study
+                  
+                  ├── GEO Accession viewer_files # full file contents required to upload original study webpage
+                  
+                  ├── GSE267505_RawCountFile_rsemgenes.txt # scRNA protein dataset used in inital study
+                  
+                  ├── data_cleaning.R # R script for data cleaning/prep
+                  
+                  ├── .Rhistory # R history file
+                  
+                  ├── cleaned_data.txt # Output of the R script (input for Python)
+                  
+                  ├── Machine_Learning.py # Python modeling & evaluation
+            
+            └── README.md # This file
 
 ---
 
-## Prerequisites
+# Prerequisites
 
 - **R (≥ 4.0)** with:
   - tidyverse
@@ -51,7 +55,7 @@ This repository contains two analysis scripts for a small breast cancer study:
 
 ---
 
-## Installation
+# Installation
 
 1. **R dependencies**
    *(install with R gui)*
@@ -69,8 +73,8 @@ This repository contains two analysis scripts for a small breast cancer study:
 
 ---
 
-## Usage
-# Preprocess the raw counts (R)
+# Usage
+## Preprocess the raw counts (R)
    1. Edit data_cleaning.R to point to your output directory for cleaned_data.txt.
    2. Run R in gui (preferably rStudio) with tidyverse installed.
    3. Choose `GSE267505_RawCountFile_rsemgenes.txt` raw data file when prompted.
@@ -81,7 +85,7 @@ This repository contains two analysis scripts for a small breast cancer study:
    - Overwrite this file
    - Rename this file
    - Skip running R script all together and begin with next step
-# Run ML script (python/shell)
+## Run ML script (python/shell)
   **To run in unix shell:**
   
    1. Change directory to project directory.
@@ -93,7 +97,7 @@ This repository contains two analysis scripts for a small breast cancer study:
 
 ---
 
-## Outputs
+# Outputs
 **Console**
 - LOO-CV accuracy and standard deviation
 - Per-split accuracies
@@ -101,7 +105,7 @@ This repository contains two analysis scripts for a small breast cancer study:
 - ROC AUC
 
 **Plot**
-- ROC curve graphic (shown interactively or saved as as roc.png)
+- ROC curve graphic (shown interactively or saved as as `roc.png`)
 
 ---
 
