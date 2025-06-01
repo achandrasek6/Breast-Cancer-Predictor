@@ -110,7 +110,10 @@ This repository contains two analysis scripts for a small breast cancer study:
 ---
 
 ## Notes
+- Warning messages indicating zero variance in certain columns can be ignored.
+     - Columns were dropped during model feature selection.
 - No additional configuration files are required.
+
 
 
 
