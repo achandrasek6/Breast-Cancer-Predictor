@@ -1,5 +1,5 @@
 # Breast-Cancer-Predictor
-_ML model that predicts tumor presence in scRNA seq breast tissue samples._
+_ML pipeline that predicts tumor presence in scRNA seq breast tissue samples._
 
 This repository contains two analysis scripts for a small breast cancer study:
 
