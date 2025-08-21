@@ -1,7 +1,7 @@
 # Breast-Cancer-Predictor
 _ML pipeline that predicts tumor presence in scRNA seq breast tissue samples._
 
-This repository contains two analysis scripts for a small breast cancer study:
+This repository contains two analysis scripts for a clinical diagnostics breast cancer study:
 
 1. **R Script** (`data_preprocessing.R`)  
    - Imports raw gene-count data.  
