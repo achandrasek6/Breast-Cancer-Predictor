@@ -8,7 +8,7 @@
 
 * **What I built:** a small-cohort, reproducible pipeline that cleans RNA-seq counts (R), then trains and evaluates a **Random Forest** classifier with **strict Leave-One-Out CV (LOO-CV)** in Python.
 * **Dataset:** 9 paired tumor/adjacent normal samples from GEO **GSE267505** (subset selected for quality/metadata completeness).
-* **Held-out performance (LOO-CV):** **Accuracy = 0.889**, **ROC AUC = 0.775**; **1 misclassified** sample across 9 folds (details in report).
+* **Held-out performance (LOO-CV):** **Accuracy = 0.889**, **ROC AUC = 0.775**; **1 misclassified** sample across 9 folds.
 * **Compact features:** within each fold, univariate **ANOVA F-test selects the top 10 genes** after log-transform, scaling, and low-variance filtering—keeps the model simple and interpretable.
 
 > **Why it matters:** Small clinical cohorts are common. This repo shows how to get **credible estimates** from limited data with rigorous cross-validation and fold-internal feature selection (no leakage), while keeping a **parsimonious gene panel** that’s easier to inspect and validate biologically.
